@@ -1,17 +1,4 @@
-body {
-  font-size: 36px;
-  color: #000000;
-  text-align: center;
-  font-family: 'Oxygen', sans-serif;
-}
 
-
-/** HEADER **/
-#header-nav {
-  /*background-color: #f6b319;*/
-  border-radius: 0;
-  border: 1px;
-}
 
 
 
@@ -24,26 +11,54 @@ body {
 
 /* HOME PAGE */
 
-
-
-
-
-#specials-tile {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+* {
+  box-sizing: border-box;
 }
 
-#menu-tile span, #specials-tile span, #map-tile span {
+.Menul h1
+{
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+
+#chicken-tile, #beef-tile, #sushi-tile {
+  height: 250px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+
+#chicken-tile {
+  background-color: #CCCC00;
+  
+}
+#beef-tile {
+  background-color: #CC0000;
+}
+
+#sushi-tile {
+  background-color: #00CC66;
+}
+
+#chicken-tile span, #beef-tile span, #sushi-tile span {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
-  width: 100%;
+  width: 170px;
+  height: 35px;
   text-align: center;
   font-size: 1.6em;
   text-transform: uppercase;
@@ -52,9 +67,23 @@ body {
   opacity: .8;
 }
 
+#chicken-tile content, #beef-tile content, #sushi-tile content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.6em;
+  color: black;
+  opacity: .8;
+}
+
+
+
 /* END HOME PAGE */
 
-
+.row {
+  width: 100%;
+}
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
@@ -144,6 +173,10 @@ body {
     width: 100%;
   }
 
+ #sushi-tile
+ {
+  width: 95%;
+ }
 }
 
 /********** small devices only **********/
